@@ -221,9 +221,9 @@ p.lead {
 
 .year-group h3 {
   color: var(--accent);
-  font-size: 1rem;
+  font-size: 0.85rem;
   letter-spacing: 0.04em;
-  margin: 40px 0 4px;
+  margin: 22px 0 2px;
   text-transform: uppercase;
 }
 
@@ -236,17 +236,25 @@ p.lead {
 }
 
 .credit-list li {
-  padding: 12px 0;
+  padding: 6px 0;
   border-bottom: 1px solid var(--border);
 }
 
-.credit-list .title { font-weight: 600; }
+.credit-list .title {
+  font-weight: 600;
+  font-size: 0.92rem;
+  margin: 0;
+}
 
 .credit-list .role,
 .credit-list .venue {
   color: var(--text-muted);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  margin: 1px 0 0;
 }
+
+#cv-page section { margin-bottom: 40px; }
+#cv-page h2 { font-size: 1.1rem; margin-bottom: 10px; }
 
 .contact-box {
   background: var(--bg-elevated);
