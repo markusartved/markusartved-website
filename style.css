@@ -135,6 +135,7 @@ p.lead {
 }
 
 .release-card {
+  position: relative;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: 4px;
@@ -144,6 +145,32 @@ p.lead {
   box-shadow: 0 1px 3px rgba(43, 40, 34, 0.06);
   transition: transform 0.15s ease, border-color 0.15s ease;
 }
+
+.release-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.video-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(28, 28, 26, 0.6);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background 0.15s ease;
+}
+
+.video-badge svg { margin-left: 1px; }
+
+.video-badge:hover { background: rgba(28, 28, 26, 0.85); }
 
 .release-card:hover {
   transform: translateY(-3px);
