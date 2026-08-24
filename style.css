@@ -493,3 +493,12 @@ footer {
   .discography-list li { grid-template-columns: 44px 1fr; }
   .event-date { min-width: 100%; }
 }
+
+.spotify-embed {
+  max-width: 560px;
+}
+
+.spotify-embed iframe {
+  display: block;
+  width: 100%;
+}
