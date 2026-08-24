@@ -496,6 +496,7 @@ footer {
 
 .spotify-embed {
   max-width: 560px;
+  margin: 0 auto;
 }
 
 .spotify-embed iframe {
