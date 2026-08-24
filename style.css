@@ -1,13 +1,13 @@
 :root {
-  --bg: #f4f1ea;
-  --bg-elevated: #fffdf9;
-  --text: #2b2822;
-  --text-muted: #837c6d;
-  --accent: #4a6670;
-  --border: #e1d9c8;
+  --bg: #fafaf8;
+  --bg-elevated: #ffffff;
+  --text: #1c1c1a;
+  --text-muted: #8a8880;
+  --accent: #3f5c66;
+  --border: #e7e6e0;
   --max-width: 880px;
-  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
-  --font-body: "EB Garamond", Georgia, "Times New Roman", serif;
+  --font-display: "Jost", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Jost", -apple-system, "Helvetica Neue", Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -19,8 +19,9 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
-  font-size: 18px;
-  line-height: 1.55;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -55,11 +56,12 @@ header.site-header .wrap {
 
 .logo {
   font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.25rem;
+  font-weight: 400;
+  font-size: 1.4rem;
   letter-spacing: 0.01em;
   text-decoration: none;
   color: var(--text);
+  text-transform: lowercase;
 }
 
 nav.main-nav {
@@ -71,10 +73,10 @@ nav.main-nav {
 nav.main-nav a {
   text-decoration: none;
   color: var(--text-muted);
-  font-size: 0.85rem;
-  letter-spacing: 0.03em;
+  font-weight: 300;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
   text-transform: lowercase;
-  font-variant: small-caps;
   transition: color 0.15s ease;
 }
 
@@ -89,17 +91,25 @@ main {
 
 h1 {
   font-family: var(--font-display);
-  font-size: clamp(2.1rem, 5vw, 3.2rem);
-  line-height: 1.2;
+  font-size: clamp(2rem, 4.5vw, 2.8rem);
+  line-height: 1.25;
   margin: 0 0 20px;
-  font-weight: 600;
+  font-weight: 500;
+}
+
+h1.intro {
+  font-size: clamp(1.3rem, 2.4vw, 1.6rem);
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 56ch;
+  color: var(--text);
 }
 
 h2 {
   font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin: 0 0 20px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--text);
 }
 
@@ -108,8 +118,8 @@ section {
 }
 
 p.lead {
-  font-size: 1.2rem;
-  font-style: italic;
+  font-size: 1.15rem;
+  font-weight: 300;
   color: var(--text-muted);
   max-width: 60ch;
   margin: 0 0 40px;
@@ -152,7 +162,7 @@ p.lead {
 
 .release-card .title {
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.02rem;
   margin: 0 0 2px;
 }
@@ -312,8 +322,8 @@ p.lead {
 
 .production h3 {
   font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: 500;
   margin: 0 0 4px;
 }
 
