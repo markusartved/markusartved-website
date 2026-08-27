@@ -248,10 +248,38 @@ p.lead {
   border-color: #c9bfa8;
 }
 
+.release-card .cover {
+  position: relative;
+  overflow: hidden;
+}
+
 .release-card img {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   width: 100%;
+}
+
+.release-card .role-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px;
+  font-size: 0.78rem;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.75);
+  background: rgba(28, 28, 26, 0.35);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.release-card:hover .role-overlay {
+  opacity: 1;
 }
 
 .release-card .meta {
