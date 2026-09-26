@@ -161,8 +161,8 @@ p.lead {
 .featured-release:hover { opacity: 0.72; }
 
 .featured-release img {
-  width: 330px;
-  height: 330px;
+  width: 428px;
+  height: 428px;
   object-fit: cover;
   flex-shrink: 0;
 }
