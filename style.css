@@ -514,6 +514,7 @@ p.lead {
 }
 
 .production .listen a {
+  font-size: 0.86rem;
   font-weight: 600;
   border-bottom: 1px solid var(--text);
   padding-bottom: 1px;
